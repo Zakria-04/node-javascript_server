@@ -1,8 +1,10 @@
 import express from "express";
 import mongoose from "mongoose";
+import Routes from "./API/Routes/Routes.js";
 
 const app = express();
 app.use(express.json());
+app.use("/", Routes)
 
 // node-javascript_server2024
 const url =
